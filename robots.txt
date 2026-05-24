@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /data/
+Disallow: /assets/documents/
+
+Sitemap: https://www.lindjan.cat/sitemap.xml

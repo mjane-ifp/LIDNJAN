@@ -1,0 +1,24 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bgTerr" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0D2735"/>
+    <stop offset="100%" stop-color="#1A4A5C"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="400" fill="url(#bgTerr)"/>
+<circle cx="300" cy="190" r="88" fill="#F7941D" opacity="0.06"/>
+<circle cx="300" cy="190" r="62" fill="white" opacity="0.04"/>
+
+  <g stroke="#F7941D" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M230 158 C250 140 270 175 290 158 C310 140 330 175 350 158 C370 140 385 158 385 158"/>
+    <path d="M230 180 C250 162 270 197 290 180 C310 162 330 197 350 180 C370 162 385 180 385 180" opacity=".8"/>
+    <path d="M230 202 C250 184 270 219 290 202 C310 184 330 219 350 202 C370 184 385 202 385 202" opacity=".6"/>
+  </g>
+  <rect x="218" y="218" width="178" height="6" rx="3" fill="#F7941D" opacity="0.25"/>
+<text x="300" y="362" text-anchor="middle"
+  font-family="system-ui,-apple-system,sans-serif"
+  font-size="15" font-weight="700" fill="white" opacity="0.45"
+  letter-spacing="4">TERRA RADIANT</text>
+<line x1="272" y1="378" x2="328" y2="378"
+  stroke="#F7941D" stroke-width="1.5" opacity="0.45"/>
+</svg>

@@ -1,0 +1,32 @@
+{
+  "stats": [
+    { "pct": "41%", "label": "Calefacció",         "icon": "🔥" },
+    { "pct": "26%", "label": "Aigua calenta (ACS)", "icon": "💧" },
+    { "pct": "12%", "label": "Electrodomèstics",    "icon": "🏠" }
+  ],
+  "categories": [
+    { "id": "calefaccio", "title": "Calefacció", "tips": [
+      "Mantén la temperatura entre 19°C i 21°C durant el dia i entre 15°C i 17°C a la nit.",
+      "Abaixa les persianes a la nit per evitar que l'escalfor s'escapi.",
+      "Aïlla bé les finestres: estalviaràs entre un 20% i un 30% en calefacció.",
+      "No tapis els radiadors amb mobles o darrere de les cortines.",
+      "Apaga la calefacció quan ventilis. Amb 10 minuts al dia n'hi ha prou.",
+      "Purga regularment els radiadors perquè funcionin a ple rendiment.",
+      "No eixuguis la roba sobre dels radiadors.",
+      "Utilitza catifes per millorar la sensació tèrmica de les habitacions."
+    ]},
+    { "id": "cuina", "title": "Cuina", "tips": [
+      "Empra l'aigua estrictament necessària al cuinar.",
+      "Utilitza recipients amb el fons difusor lleugerament més ample que l'obertura.",
+      "Obre el forn només si és necessari: cada vegada que l'obres, perds un 25% de l'energia.",
+      "Utilitza el microones i estalvia entre un 60% i un 70% d'energia.",
+      "Les olles de pressió t'estalvien temps i fins a un 80% d'energia."
+    ]},
+    { "id": "aigua", "title": "Aigua calenta", "tips": [
+      "Instal·la airejadors a les aixetes.",
+      "Ajusta la temperatura de l'aigua calenta entre els 30°C i els 35°C.",
+      "Ensabona't amb l'aixeta tancada: estalvies 10 litres d'aigua per minut.",
+      "Les dutxes eficients no han de superar els 5 minuts i l'aigua a un màxim de 30°C."
+    ]}
+  ]
+}

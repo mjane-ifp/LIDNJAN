@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Consells d'eficiència energètica per estalviar en calefacció, aigua calenta, cuina i electrodomèstics. Lindjan – Fent camí."/>
+  <title>Consells d'eficiència energètica – Lindjan</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    /* Estils específics de la pàgina consells */
+    .consells-intro { background: var(--c-white); }
+    .consells-calefaccio { background: var(--c-off-white); }
+    .consells-cuina      { background: var(--c-white); }
+    .consells-aigcalenta { background: var(--c-off-white); }
+    .consells-electro    { background: var(--c-white); }
+    .consells-gas        { background: var(--c-navy); }
+
+    /* Grid d'electrodomèstics */
+    .electro-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem; }
+    .electro-card {
+      background: var(--c-off-white); border-radius: var(--radius-lg);
+      padding: 2rem; border: 1.5px solid var(--c-gray-100); transition: var(--trans);
+    }
+    .electro-card:hover { border-color: var(--c-orange); box-shadow: var(--shadow); }
+    .electro-card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+    .electro-ico { font-size: 1.8rem; }
+    .electro-card h3 { font-size: 1.1rem; margin: 0; }
+    .electro-card p { font-size: 0.875rem; margin-bottom: 0.5rem; }
+
+    /* Gas section dark */
+    .gas-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    .gas-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-lg); padding: 1.75rem;
+      transition: var(--trans);
+    }
+    .gas-card:hover { background: rgba(255,255,255,0.1); border-color: var(--c-orange); }
+    .gas-card-ico { 
+      font-size: 1.8rem; 
+      margin-bottom: 1rem; 
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: var(--c-orange);
+    }
+    .gas-card-ico svg {
+      width: 48px;
+      height: 48px;
+      stroke: currentColor;
+      fill: none;
+    }
+    .gas-card h3 { color: var(--c-white); font-size: 1rem; margin-bottom: 0.75rem; }
+    .gas-card p  { color: rgba(255,255,255,0.65); font-size: 0.85rem; line-height: 1.6; }
+
+    @media(max-width:768px) {
+      .electro-grid { grid-template-columns: 1fr; }
+      .gas-grid     { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR ══════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Navegació principal">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo-placeholder" aria-label="Lindjan – Inici">
+        <img src="/img/logo/menu.webp" alt="Lindjan" />
+      </a>
+      <ul class="nav-menu" role="menubar">
+        <li class="nav-item">
+          <a href="serveis.html" class="nav-link has-dropdown">Serveis <span class="caret"></span></a>
+          <div class="dropdown">
+            <a href="serveis.html#productes">Productes</a>
+            <a href="serveis.html#installacions">Instal·lacions</a>
+            <a href="serveis.html#certificats">Certificats</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="projectes.html"      class="nav-link">Projectes</a></li>
+        <li class="nav-item"><a href="consells.html"       class="nav-link active">Consells</a></li>
+        <li class="nav-item"><a href="contacte.html"       class="nav-link">Contacte</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div class="nav-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:lindjan@gmail.com" aria-label="Correu"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+34649576052" aria-label="Telèfon"><i class="fas fa-phone"></i></a>
+        </div>
+        <button class="nav-lang">Ca</button>
+        <button class="nav-toggle" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO ════════════════════════════════════ -->
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../index.html">Inici</a><span>›</span><span>Consells</span></nav>
+      <h1>Consells d'eficiència energètica</h1>
+      <p>Junts aconseguirem reduir el consum d'energia de casa teva i de la teva empresa</p>
+    </div>
+  </header>
+
+  <!-- INTRO: EL CONSUM D'ENERGIA DE CASA TEVA ═ -->
+  <section class="consells-intro section">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom:1rem;">
+        <span class="section-tag">Saps quant gastes?</span>
+        <h2>El consum d'energia de casa teva</h2>
+        <p style="max-width:580px;margin:.75rem auto 0;">Conèixer on va l'energia és el primer pas per estalviar. Aquí tens el desglossament mig d'una llar catalana:</p>
+      </div>
+
+      <!-- Estadístiques consum -->
+      <div class="consells-stats-grid reveal">
+        <div class="consell-stat-card">
+          <div class="consell-stat-pct">41%</div>
+          <div class="consell-stat-label">Calefacció<br><small style="opacity:.6;font-size:1.1rem; font-weight: 200; color: white;">El major consum de la llar</small></div>
+        </div>
+        <div class="consell-stat-card">
+          <div class="consell-stat-pct">26%</div>
+          <div class="consell-stat-label">Aigua calenta sanitària<br><small style="opacity:.6;font-size:1.1rem; font-weight: 200; color: white;">ACS – dutxes, aixetes, cuina</small></div>
+        </div>
+        <div class="consell-stat-card">
+          <div class="consell-stat-pct">12%</div>
+          <div class="consell-stat-label">Electrodomèstics<br><small style="opacity:.6;font-size:1.1rem; font-weight: 200; color: white;">Nevera, rentadora, TV, ordinador</small></div>
+        </div>
+      </div>
+
+      <p class="text-center reveal" style="margin-top:2rem;font-size:1.1rem;color:var(--c-gray-300);">
+        El 21% restant correspon a il·luminació, cuina i altres usos.
+        Actuant sobre calefacció i ACS pots reduir fins a un <strong style="color:var(--c-navy);">67% del teu consum total</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- GAS NATURAL: SEGURETAT I ESTALVI ════════ -->
+  <section class="consells-gas section" id="gas-natural">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom:3rem;">
+        <span class="section-tag" style="background:rgba(247,148,29,.15);color:var(--c-orange);">Gas Natural</span>
+        <h2 style="color:var(--c-white);">Com estalviar gas natural de forma segura</h2>
+        <p style="max-width:600px;margin:.75rem auto 0;color:rgba(255,255,255,.65);">Controla la teva despesa energètica fent un bon ús del gas natural i mantenint la instal·lació en bon estat.</p>
+      </div>
+      <div class="gas-grid">
+        <div class="gas-card reveal">
+          <div class="gas-card-ico">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <circle cx="32" cy="20" r="8" fill="currentColor"/>
+              <path d="M 20 32 L 20 48 Q 20 54 26 54 L 38 54 Q 44 54 44 48 L 44 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 26 38 L 26 48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 38 38 L 38 48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Instal·ladors autoritzats</h3>
+          <p>Només una <strong style="color:var(--c-orange);">empresa instal·ladora autoritzada</strong> pot muntar o modificar una instal·lació de gas. No arrisquis la seguretat de la teva llar.</p>
+        </div>
+        <div class="gas-card reveal reveal-delay-1">
+          <div class="gas-card-ico">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <path d="M 32 48 L 32 56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 28 56 L 36 56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 32 10 Q 24 20 24 30 Q 24 40 32 48 Q 40 40 40 30 Q 40 20 32 10" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="32" cy="30" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Atenció a la flama</h3>
+          <p>El bon estat de la flama (estable i blava) demostra una bona combustió. Evita que s'apaguin els fogons mentre cuines. Si la flama taca els cassons, avisa el servei tècnic.</p>
+        </div>
+        <div class="gas-card reveal reveal-delay-2">
+          <div class="gas-card-ico">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <path d="M 18 24 L 18 32 Q 18 38 24 38 L 40 38 Q 46 38 46 32 L 46 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="24" cy="28" r="2" fill="currentColor"/>
+              <circle cx="32" cy="28" r="2" fill="currentColor"/>
+              <circle cx="40" cy="28" r="2" fill="currentColor"/>
+              <path d="M 22 44 L 22 50 M 32 44 L 32 50 M 42 44 L 42 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Tubs flexibles</h3>
+          <p>Vigila l'estat dels tubs flexibles dels aparells. Demana als instal·ladors que t'instal·lin <strong style="color:var(--c-orange);">tubs d'alta seguretat</strong> que compleixin amb la normativa vigent.</p>
+        </div>
+        <div class="gas-card reveal">
+          <div class="gas-card-ico">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <rect x="18" y="16" width="28" height="32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" rx="2"/>
+              <path d="M 26 20 L 26 26 M 38 20 L 38 26 M 26 32 L 26 42 M 38 32 L 38 42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="28" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Ventilació adequada</h3>
+          <p>Les reixetes de ventilació han d'estar en perfectes condicions. No les obstrueixis en cap cas, ni tan sols en envidrar la terrassa. El tub de sortida de gasos és fonamental.</p>
+        </div>
+        <div class="gas-card reveal reveal-delay-1">
+          <div class="gas-card-ico">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <path d="M 32 14 L 32 22 L 28 22 Q 20 22 20 30 L 20 46 Q 20 52 26 52 L 38 52 Q 44 52 44 46 L 44 30 Q 44 22 36 22 L 32 22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="32" cy="36" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3>Absències prolongades</h3>
+          <p>Si has de ser fora <strong style="color:var(--c-orange);">més de dos dies</strong>, tanca la clau de pas del gas de casa teva. Estalviaràs energia i prevendràs possibles fuites.</p>
+        </div>
+        <div class="gas-card reveal reveal-delay-2">
+          <div class="gas-card-ico">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <rect x="16" y="14" width="32" height="40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" rx="2"/>
+              <line x1="22" y1="24" x2="42" y2="24" stroke="currentColor" stroke-width="2"/>
+              <line x1="22" y1="32" x2="42" y2="32" stroke="currentColor" stroke-width="2"/>
+              <line x1="22" y1="40" x2="42" y2="40" stroke="currentColor" stroke-width="2"/>
+              <circle cx="32" cy="48" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Inspecció periòdica</h3>
+          <p>Realitza la <strong style="color:var(--c-orange);">revisió periòdica</strong> de la teva instal·lació de gas (IP) amb una empresa autoritzada. A més de ser obligatòria, garanteix la seguretat de tots.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA ════════════════════════════════════ -->
+  <div class="banner-cta">
+    <div class="container">
+      <h2 class="reveal">Vols aplicar aquests consells?<br><span class="highlight">Lindjan t'ajuda a fer-ho realitat</span></h2>
+      <p class="reveal" style="color:rgba(255,255,255,.7);margin:1rem auto 2rem;max-width:520px;">
+        Contacta amb el nostre equip tècnic i t'assessorem sobre les millors solucions per reduir el consum energètic de casa teva o del teu negoci.
+      </p>
+      <div class="reveal">
+        <a href="contacte.html" class="btn btn-primary btn-arrow">Sol·licita assessorament gratuït</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER ══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© Lindjan S.L. 2026</span>
+      <nav class="footer-links">
+        <a href="#">Termes i Condicions</a>
+        <a href="#">Política de Privacitat</a>
+        <a href="#">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/utils/constants.js"></script>
+  <script src="../js/utils/helpers.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/slider.js"></script>
+  <script src="../js/form.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

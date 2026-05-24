@@ -1,0 +1,22 @@
+{
+  "categories": [
+    { "id": "gas",       "icon": "🔥", "title": "Gas",            "items": ["Instal·lacions receptores comunitàries","Instal·lacions individuals","Instal·lacions comercials i industrials","Instal·lacions en locals de pública concurrència","Revisions i certificats"] },
+    { "id": "electric",  "icon": "⚡", "title": "Electricitat",   "items": ["Escomeses","Instal·lacions de Baixa Tensió","Instal·lacions industrials i sector terciari","Certificats i Intervencions","Punt recàrrega vehicle elèctric"] },
+    { "id": "clima",     "icon": "❄️", "title": "Clima",          "items": ["Aire condicionat amb splits","Aire condicionat per conductes","Calefacció amb gas natural","Calefacció terra radiant","Calefacció elèctrica baix consum"] },
+    { "id": "aero",      "icon": "🌿", "title": "Aerotèrmia",     "items": ["Instal·lació de bombes de calor aerotèrmiques","Substitució de calefacció convencional","Sistemes combinats calefacció+ACS+refrigeració","Manteniment i posada en marxa"] },
+    { "id": "solar",     "icon": "☀️", "title": "Plaques Solars", "items": ["Instal·lació fotovoltaica per a autoconsum","Sistemes solars tèrmics per a ACS","Legalització i connexió a xarxa","Treballs d'alçada amb equips certificats"] },
+    { "id": "plagues",   "icon": "🪲", "title": "Control Plagues","items": ["Tractaments de fumigació","Tractaments anti rosegadors","Certificat de desinfecció inclòs"] },
+    { "id": "incendis",  "icon": "🔴", "title": "Contraincendis", "items": ["Campanes extractores","Locals comercials","Naus industrials","Certificació i revisió periòdica"] },
+    { "id": "aigua",     "icon": "💧", "title": "Aigua",          "items": ["Instal·lacions industrials","Escomeses per a edificis i individuals","Equips de depuració i osmosi inversa","ACS"] },
+    { "id": "enginyeria","icon": "📐", "title": "Enginyeria",     "items": ["Projectes tècnics d'instal·lació","Legalitzacions davant organismes oficials","Memòries tècniques i esquemes unifilars","Tramitació de llicències i permisos"] }
+  ],
+  "certificates": [
+    { "id": "gas-cert",      "icon": "🔥", "name": "Gas",             "items": ["IRG1 – Instal·lació interior","IRG2 – Instal·lació comunitària","IRG3 – Instal·lació individual","JCA – Justificant correcció anomalies","IP – Inspecció periòdica"] },
+    { "id": "electric-cert", "icon": "⚡", "name": "Electricitat",    "items": ["CIE – Certificat d'Instal·lació Elèctrica","BRIE – Reconeixement","Esquema unifiliar","Memòria tècnica"] },
+    { "id": "clima-cert",    "icon": "❄️", "name": "Clima",           "items": ["Annex B – Aire condicionat","Gasos fluorats"] },
+    { "id": "aigua-cert",    "icon": "💧", "name": "Aigua",           "items": ["Certificat de subministrament d'aigua amb comptador"] },
+    { "id": "plagues-cert",  "icon": "🪲", "name": "Plagues",         "items": ["Certificat de desinfecció"] },
+    { "id": "incendis-cert", "icon": "🔴", "name": "Contra Incendis", "items": ["Certificat equip contra incendis – campana","Certificat sistema contra incendis"] },
+    { "id": "legal-cert",    "icon": "📋", "name": "Legalitzacions",  "items": ["RITE – Reglament d'Instal·lacions Tèrmiques d'Edificis","RITSIC – Reglament d'Infraestructures de Seguretat i Control"] }
+  ]
+}

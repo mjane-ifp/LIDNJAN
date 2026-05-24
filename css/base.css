@@ -1,0 +1,76 @@
+/* ============================================
+   LINDJAN · base.css
+   Reset, tipografia, utilitats globals
+   ============================================ */
+
+/* ── Reset ─────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  color: var(--c-navy);
+  background: var(--c-white);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+img  { max-width: 100%; display: block; }
+a    { text-decoration: none; color: inherit; }
+ul   { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ── Tipografia ────────────────────────── */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-head);
+  line-height: 1.15;
+  color: var(--c-navy);
+}
+h1 { font-size: clamp(2rem,   5vw, 3.8rem); font-weight: 800; }
+h2 { font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 700; }
+h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 600; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+p  { font-size: 1rem; color: var(--c-gray-500); line-height: 1.75; }
+
+/* ── Layout ────────────────────────────── */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.section    { padding: var(--section-pad); }
+.section-sm { padding: var(--section-pad-sm); }
+
+/* ── Color helpers ─────────────────────── */
+.bg-white    { background: var(--c-white); }
+.bg-off      { background: var(--c-off-white); }
+.bg-navy     { background: var(--c-navy); }
+.text-orange { color: var(--c-orange); }
+.text-white  { color: var(--c-white); }
+.text-center { text-align: center; }
+.sr-only     { position:absolute; width:1px; height:1px; clip:rect(0,0,0,0); overflow:hidden; }
+
+/* ── Tag / badge helper ─────────────────── */
+.section-tag {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--c-orange-light);
+  color: var(--c-orange);
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Breadcrumb ────────────────────────── */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+}
+.breadcrumb a   { color: var(--c-orange); }
+.breadcrumb span{ color: rgba(255,255,255,0.3); }

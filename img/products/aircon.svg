@@ -1,0 +1,35 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bgAire" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0D2735"/>
+    <stop offset="100%" stop-color="#1A4A5C"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="400" fill="url(#bgAire)"/>
+<circle cx="300" cy="190" r="88" fill="#F7941D" opacity="0.06"/>
+<circle cx="300" cy="190" r="62" fill="white" opacity="0.04"/>
+<line x1="300" y1="180" x2="352" y2="180" stroke="#1EAAE5" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="329" y1="180" x2="334" y2="189" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="329" y1="180" x2="323" y2="189" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="300" y1="180" x2="326" y2="225" stroke="#1EAAE5" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="314" y1="205" x2="309" y2="214" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="314" y1="205" x2="304" y2="205" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="300" y1="180" x2="274" y2="225" stroke="#1EAAE5" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="286" y1="205" x2="275" y2="205" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="286" y1="205" x2="280" y2="196" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="300" y1="180" x2="248" y2="180" stroke="#1EAAE5" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="271" y1="180" x2="266" y2="171" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="271" y1="180" x2="277" y2="171" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="300" y1="180" x2="274" y2="135" stroke="#1EAAE5" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="286" y1="155" x2="291" y2="146" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="286" y1="155" x2="296" y2="155" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="300" y1="180" x2="326" y2="135" stroke="#1EAAE5" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="314" y1="155" x2="325" y2="155" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<line x1="314" y1="155" x2="320" y2="164" stroke="#1EAAE5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+<text x="300" y="362" text-anchor="middle"
+  font-family="system-ui,-apple-system,sans-serif"
+  font-size="15" font-weight="700" fill="white" opacity="0.45"
+  letter-spacing="4">AIRE CONDICIONAT</text>
+<line x1="272" y1="378" x2="328" y2="378"
+  stroke="#F7941D" stroke-width="1.5" opacity="0.45"/>
+</svg>

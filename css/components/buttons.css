@@ -1,0 +1,61 @@
+/* ============================================
+   LINDJAN · components/buttons.css
+   ============================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: var(--trans);
+  cursor: pointer;
+  border: 2px solid transparent;
+  white-space: nowrap;
+}
+
+/* Primary – orange filled */
+.btn-primary {
+  background: var(--c-orange);
+  color: var(--c-white);
+  border-color: var(--c-orange);
+}
+.btn-primary:hover {
+  background: var(--c-orange-dark);
+  border-color: var(--c-orange-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-orange);
+}
+
+/* Outline – white border */
+.btn-outline {
+  background: transparent;
+  color: var(--c-white);
+  border-color: var(--c-white);
+}
+.btn-outline:hover {
+  background: var(--c-white);
+  color: var(--c-navy);
+  transform: translateY(-2px);
+}
+
+/* Ghost – navy border */
+.btn-ghost {
+  background: transparent;
+  color: var(--c-navy);
+  border-color: var(--c-gray-100);
+}
+.btn-ghost:hover {
+  border-color: var(--c-orange);
+  color: var(--c-orange);
+}
+
+/* Small variant */
+.btn-sm { padding: 10px 20px; font-size: 0.85rem; }
+
+/* Arrow suffix */
+.btn-arrow::after { content: '›'; font-size: 1.3em; line-height: 1; }

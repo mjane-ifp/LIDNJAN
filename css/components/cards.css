@@ -1,0 +1,168 @@
+/* ============================================
+   LINDJAN · components/cards.css
+   Catalog, project, service, cert, valor cards
+   ============================================ */
+
+/* ── Catalog product cards ──────────────── */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.catalog-card {
+  background: var(--c-white);
+  border: 1.5px solid var(--c-gray-100);
+  border-radius: var(--radius-lg); overflow: hidden;
+  display: flex; flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: var(--trans);
+}
+.catalog-card:hover {
+  border-color: var(--c-orange);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+.catalog-card-img {
+  position: relative; height: 200px; overflow: hidden;
+  background: var(--c-navy);
+}
+.catalog-card-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.55s ease;
+}
+.catalog-card:hover .catalog-card-img img { transform: scale(1.07); }
+.catalog-badge {
+  position: absolute; top: 12px; right: 12px;
+  background: var(--c-orange); color: var(--c-white);
+  font-size: 0.68rem; font-weight: 700;
+  padding: 4px 11px; border-radius: 20px;
+  letter-spacing: 0.04em;
+  box-shadow: 0 3px 10px rgba(247,148,29,0.4);
+}
+.catalog-card-body {
+  padding: 1.5rem;
+  display: flex; flex-direction: column; flex: 1; gap: 0.7rem;
+}
+.catalog-card-body h3 { font-size: 1.05rem; }
+.catalog-card-body p  { font-size: 0.875rem; flex: 1; }
+.catalog-card-body .btn { align-self: flex-start; margin-top: auto; }
+
+/* ── Project cards ──────────────────────── */
+.projecte-card {
+  background: var(--c-white);
+  border-radius: var(--radius-lg); overflow: hidden;
+  box-shadow: var(--shadow); transition: var(--trans);
+  flex-shrink: 0;
+}
+.projecte-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.projecte-img { height: 200px; overflow: hidden; background: var(--c-navy); }
+
+.projecte-body { padding: 1.5rem; }
+.projecte-tag {
+  display: inline-block; padding: 4px 12px;
+  background: var(--c-orange-light); color: var(--c-orange);
+  border-radius: 20px; font-size: 0.75rem; font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.projecte-body h3 { margin-bottom: 0.5rem; font-size: 1.05rem; }
+.projecte-body p  { font-size: 0.875rem; line-height: 1.6; }
+
+/* ── Valor cards ────────────────────────── */
+.valors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.valor-card {
+  border: 3.2px solid var(--c-blue);
+  border-radius: 2rem; padding: 2.5rem 5rem;
+  text-align: center; transition: var(--trans);
+}
+.valor-card:hover {
+  border-color: var(--c-orange);
+  background: var(--c-orange-light);
+  box-shadow: var(--shadow); transform: translateY(-4px);
+}
+.valor-icon {
+  width: 60px; height: 60px; margin: 0 auto 1.2rem;
+  background: var(--c-orange-light); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem;
+}
+.valor-card h3 { font-size: 1.8rem; color: var(--c-navy); font-family: var(--font-body); font-weight: 300; }
+.valor-card p  { font-size: 0.9rem; }
+
+/* ── Service category cards ─────────────── */
+.servei-cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.servei-cat-card {
+  background: var(--c-white);
+  border: 1.5px solid var(--c-gray-100);
+  border-radius: 14px; overflow: hidden;
+  transition: var(--trans);
+}
+.servei-cat-card:hover {
+  border-color: var(--c-orange);
+  box-shadow: 0 6px 24px rgba(247,148,29,0.13);
+  transform: translateY(-3px);
+}
+.servei-cat-header {
+  padding: 13px 18px;
+  display: flex; align-items: center; gap: 10px;
+  background: var(--c-navy);
+}
+.servei-cat-icon  { font-size: 1.2rem; line-height: 1; flex-shrink: 0; }
+.servei-cat-title { font-family: var(--font-head); font-weight: 700; font-size: 0.9rem; color: var(--c-white); }
+.servei-cat-list  { padding: 14px 18px 16px; display: flex; flex-direction: column; gap: 7px; }
+.servei-cat-list li { display: flex; align-items: flex-start; gap: 7px; font-size: 0.82rem; color: var(--c-gray-500); line-height: 1.5; }
+.servei-cat-list li::before { content: '→'; color: var(--c-orange); font-weight: 800; flex-shrink: 0; font-size: 0.7rem; margin-top: 3px; }
+
+/* ── Certificate cards ──────────────────── */
+.cert-cats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2.5rem; }
+.cert-cat-card {
+  border: 1.5px solid var(--c-gray-100);
+  border-radius: 12px; padding: 1.25rem;
+  background: var(--c-white); transition: var(--trans);
+}
+.cert-cat-card:hover { border-color: var(--c-orange); box-shadow: 0 4px 18px rgba(247,148,29,0.1); }
+.cert-cat-header { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--c-gray-100); }
+.cert-cat-ico  { font-size: 1.15rem; flex-shrink: 0; color: var(--c-blue); }
+.cert-cat-name { font-family: var(--font-head); font-weight: 700; font-size: 0.88rem; color: var(--c-navy); }
+.cert-cat-list { display: flex; flex-direction: column; gap: 6px; }
+.cert-cat-list li { font-size: 0.8rem; color: var(--c-gray-500); padding-left: 14px; position: relative; line-height: 1.45; }
+.cert-cat-list li::before { content: '·'; color: var(--c-orange); font-weight: 900; position: absolute; left: 0; font-size: 1.3rem; line-height: 1; }
+
+/* ── Registration badge ─────────────────── */
+.registration-badge {
+  background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-teal) 100%);
+  border: 1.5px solid rgba(247,148,29,0.32);
+  border-radius: 14px; padding: 1.5rem 2rem;
+  display: flex; align-items: center; gap: 18px;
+  margin-top: 3.5rem;
+}
+.registration-badge-icon { font-size: 2rem; flex-shrink: 0; }
+.registration-badge-text { font-size: 0.92rem; color: rgba(255,255,255,0.78); line-height: 1.55; }
+.registration-badge-text strong { font-family: var(--font-head); font-weight: 700; font-size: 1rem; color: var(--c-white); display: block; margin-bottom: 2px; }
+.registration-badge-text strong em { font-style: normal; color: var(--c-orange); }
+
+/* ── Consell tip card ────────────────────── */
+.consell-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.consell-card {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 1.25rem 1.5rem;
+  background: var(--c-white);
+  border: 1.5px solid var(--c-gray-100);
+  border-radius: var(--radius-lg);
+  transition: var(--trans);
+}
+.consell-card:hover { border-color: var(--c-orange); box-shadow: var(--shadow-sm); }
+.consell-card-ico {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: var(--c-orange-light);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.25rem;
+}
+.consell-card-text p { font-size: 0.875rem; line-height: 1.6; }
+.consell-card-text strong { font-size: 0.9rem; color: var(--c-navy); display: block; margin-bottom: 2px; }
+
+/* ── Stat card (projectes / consells) ────── */
+.stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+.stat-item { text-align: center; padding: 2rem 1rem; background: var(--c-white); border-radius: var(--radius-lg); border: 1.5px solid var(--c-gray-100); }
+.stat-num  { font-family: var(--font-head); font-size: 2.5rem; font-weight: 800; color: var(--c-orange); }
+.stat-label{ font-size: 0.85rem; color: var(--c-gray-500); margin-top: 6px; }

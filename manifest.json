@@ -1,0 +1,14 @@
+{
+  "name": "Lindjan – Solucions Energètiques",
+  "short_name": "Lindjan",
+  "description": "Solucions energètiques integrals per a empreses i particulars.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0D2735",
+  "theme_color": "#F7941D",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "img/logo/favicon.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "img/logo/favicon.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

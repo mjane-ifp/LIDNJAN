@@ -1,0 +1,76 @@
+/* ============================================
+   LINDJAN · responsive.css
+   Breakpoints: 1024px · 768px · 480px
+   ============================================ */
+
+/* ── 1024px ─────────────────────────────── */
+@media (max-width: 1024px) {
+  .serveis         { grid-template-columns: 1fr; }
+  .serveis-right   { min-height: 300px; }
+  .valors-grid     { grid-template-columns: repeat(2, 1fr); }
+  .catalog-grid    { grid-template-columns: repeat(2, 1fr); }
+  .servei-cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .cert-cats-grid  { grid-template-columns: repeat(2, 1fr); }
+  .consell-grid    { grid-template-columns: 1fr; }
+  .servei-section-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .servei-section-grid.reverse { direction: ltr; }
+  .projects-grid   { grid-template-columns: repeat(2, 1fr); }
+  .contacte-grid   { grid-template-columns: 1fr; gap: 3rem; }
+  .contacte-full-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .qui-som-stats   { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── 768px ─────────────────────────────── */
+@media (max-width: 768px) {
+  /* Nav mobile */
+  .nav-menu {
+    display: none;
+    position: fixed; top: var(--nav-height); left: 0; right: 0; bottom: 0;
+    background: var(--c-navy);
+    flex-direction: column; gap: 0;
+    padding: 1rem; overflow-y: auto;
+  }
+  .nav-menu.open { display: flex; }
+  .nav-item  { width: 100%; }
+  .nav-link  { padding: 14px 16px; border-radius: var(--radius); font-size: 1rem; }
+  .dropdown  { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; background: rgba(255,255,255,0.05); margin-top: 4px; }
+  .dropdown a{ color: rgba(255,255,255,0.75); }
+  .dropdown a:hover { background: rgba(255,255,255,0.05); }
+  .nav-social  { display: none; }
+  .nav-toggle  { display: flex; }
+
+  /* Grids */
+  .valors-grid     { grid-template-columns: 1fr; }
+  .cert-cats-grid  { grid-template-columns: 1fr; }
+  .catalog-grid    { grid-template-columns: 1fr; }
+  .servei-cat-grid { grid-template-columns: 1fr; }
+  .projects-grid   { grid-template-columns: 1fr; }
+  .stat-row        { grid-template-columns: repeat(2, 1fr); }
+  .consell-grid    { grid-template-columns: 1fr; }
+
+  /* Sections */
+  .serveis-left { padding: 50px 30px; }
+  .registration-badge { flex-direction: column; text-align: center; padding: 1.5rem; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .banner-cta h2 { font-size: clamp(1.5rem, 4vw, 2rem); }
+
+  /* Contacte page */
+  .cta-cards        { grid-template-columns: 1fr; }
+  .form-row         { grid-template-columns: 1fr; }
+  .servei-select    { grid-template-columns: repeat(2, 1fr); }
+  .contacte-form-big{ padding: 2rem 1.5rem; }
+
+  /* Consells page */
+  .consells-hero-stats { grid-template-columns: 1fr; }
+}
+
+/* ── 480px ─────────────────────────────── */
+@media (max-width: 480px) {
+  .container  { padding: 0 1.25rem; }
+  .section    { padding: 60px 0; }
+  .btn        { padding: 12px 22px; }
+  .qui-som-card { padding: 2rem 1.5rem; }
+  .stat-row   { grid-template-columns: 1fr; }
+  .cert-cats-grid { grid-template-columns: 1fr; }
+  .catalog-grid   { grid-template-columns: 1fr; }
+}

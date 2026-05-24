@@ -1,0 +1,61 @@
+/* ============================================
+   LINDJAN · variables.css
+   Colors, fonts, spacing, effects globals
+   ============================================ */
+
+  @import url("https://use.typekit.net/uyx8lqk.css");
+  @import url("https://use.typekit.net/uyx8lqk.css");
+
+:root {
+  /* ── Brand Colors ──────────────────── */
+  --c-orange:       #F7941D;
+  --c-orange-dark:  #D97A10;
+  --c-orange-light: #FFF0DC;
+  --c-yellow: #ffb703;
+  --c-navy:         #0D2735;
+  --c-navy-mid:     #16384E;
+  --c-teal:         #1A4A5C;
+  --c-blue:         #1EAAE5;
+  --c-white:        #FFFFFF;
+  --c-off-white:    #F8F9FA;
+  --c-gray-100:     #EEEEEE;
+  --c-gray-300:     #BBBBBB;
+  --c-gray-500:     #777777;
+
+  /* ── Typography ────────────────────── */
+  --font-head: 'Poppins', system-ui, sans-serif;
+  --font-body: 'Futura PT', system-ui, sans-serif;
+
+  /* ── Spacing scale ─────────────────── */
+  --sp-xs:  0.5rem;
+  --sp-sm:  1rem;
+  --sp-md:  1.5rem;
+  --sp-lg:  2rem;
+  --sp-xl:  3rem;
+  --sp-2xl: 5rem;
+
+  /* ── Layout ───────────────────────── */
+  --container-width: 1200px;
+  --nav-height:      72px;
+
+  /* ── Radius ───────────────────────── */
+  --radius-sm: 6px;
+  --radius:    8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* ── Shadows ──────────────────────── */
+  --shadow-sm: 0 2px 10px rgba(13,39,53,0.08);
+  --shadow:    0 4px 24px rgba(13,39,53,0.12);
+  --shadow-lg: 0 12px 48px rgba(13,39,53,0.18);
+  --shadow-orange: 0 8px 20px rgba(247,148,29,0.35);
+
+  /* ── Transitions ──────────────────── */
+  --trans:      0.3s cubic-bezier(0.4,0,0.2,1);
+  --trans-fast: 0.15s ease;
+  --trans-slow: 0.6s cubic-bezier(0.4,0,0.2,1);
+
+  /* ── Section padding ──────────────── */
+  --section-pad:    90px 0;
+  --section-pad-sm: 60px 0;
+}

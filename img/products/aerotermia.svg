@@ -1,0 +1,26 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bgAero" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0D2735"/>
+    <stop offset="100%" stop-color="#1A4A5C"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="400" fill="url(#bgAero)"/>
+<circle cx="300" cy="190" r="88" fill="#F7941D" opacity="0.06"/>
+<circle cx="300" cy="190" r="62" fill="white" opacity="0.04"/>
+
+  <path d="M300 128 C325 138 352 165 346 193
+           C340 221 318 232 300 228
+           C282 232 260 221 254 193
+           C248 165 275 138 300 128Z"
+        fill="#1EAAE5" opacity="0.85"/>
+  <path d="M300 228 C290 208 290 175 300 128" stroke="white" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M300 185 C318 170 336 176 340 188" stroke="#F7941D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M300 195 C322 178 340 184 345 196" stroke="#F7941D" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+<text x="300" y="362" text-anchor="middle"
+  font-family="system-ui,-apple-system,sans-serif"
+  font-size="15" font-weight="700" fill="white" opacity="0.45"
+  letter-spacing="4">AEROTÈRMIA</text>
+<line x1="272" y1="378" x2="328" y2="378"
+  stroke="#F7941D" stroke-width="1.5" opacity="0.45"/>
+</svg>

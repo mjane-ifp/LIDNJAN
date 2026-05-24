@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Projectes d'instal·lació energètica de Lindjan: calefacció, climatització, gas, electricitat i aerotèrmia."/>
+  <title>Projectes – Lindjan</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar" role="navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo-placeholder">
+        <img src="/img/logo/menu.webp" alt="Lindjan" />
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="serveis.html" class="nav-link has-dropdown">Serveis <span class="caret"></span></a><div class="dropdown"><a href="serveis.html#productes">Productes</a><a href="serveis.html#installacions">Instal·lacions</a><a href="serveis.html#certificats">Certificats</a></div></li>
+        <li class="nav-item"><a href="projectes.html" class="nav-link active">Projectes</a></li>
+        <li class="nav-item"><a href="consells.html" class="nav-link">Consells</a></li>
+        <li class="nav-item"><a href="contacte.html" class="nav-link">Contacte</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:12px;"><div class="nav-social"><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="mailto:lindjan@gmail.com" aria-label="Correu"><i class="fas fa-envelope"></i></a><a href="tel:+34649576052" aria-label="Telèfon"><i class="fas fa-phone"></i></a></div><button class="nav-lang">Ca</button><button class="nav-toggle" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../index.html">Inici</a><span>›</span><span>Projectes</span></nav>
+      <h1>Els nostres projectes</h1>
+      <p>Casos reals d'instal·lació i eficiència energètica arreu de Catalunya</p>
+    </div>
+  </header>
+
+  <section class="section bg-off">
+    <div class="container">
+      <div class="stat-row">
+        <div class="stat-item reveal"><div class="stat-num">+500</div><div class="stat-label">Projectes completats</div></div>
+        <div class="stat-item reveal reveal-delay-1"><div class="stat-num">98%</div><div class="stat-label">Satisfacció del client</div></div>
+        <div class="stat-item reveal reveal-delay-2"><div class="stat-num">10+</div><div class="stat-label">Anys d'experiència</div></div>
+        <div class="stat-item reveal reveal-delay-3"><div class="stat-num">70%</div><div class="stat-label">Estalvi energètic mig</div></div>
+      </div>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Tots</button>
+        <button class="filter-btn" data-filter="calefaccio">Calefacció</button>
+        <button class="filter-btn" data-filter="clima">Climatització</button>
+        <button class="filter-btn" data-filter="gas">Gas</button>
+        <button class="filter-btn" data-filter="electric">Electricitat</button>
+        <button class="filter-btn" data-filter="aero">Aerotèrmia</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="projecte-card reveal" data-category="clima">
+          <div class="projecte-img"><!-- TODO ES: Foto real del proyecto de climatización nau industrial --><img src="../img/projects/proj-clima.svg" alt="Climatització nau industrial" loading="lazy"/></div>
+          <div class="projecte-body"><span class="projecte-tag">Climatització</span><h3>Climatització integral nau industrial</h3><p>Sistema per a nau de 2.000 m² a Manresa. Reducció del 45% en consum.</p></div>
+        </article>
+        <article class="projecte-card reveal reveal-delay-1" data-category="calefaccio">
+          <div class="projecte-img"><!-- TODO ES: Foto real de la sala de calderas --><img src="../img/projects/proj-caldera.svg" alt="Renovació caldera comunitat" loading="lazy"/></div>
+          <div class="projecte-body"><span class="projecte-tag">Calefacció</span><h3>Renovació caldera comunitat de veïns</h3><p>Substitució per condensació A+++ en 24 habitatges a Barcelona.</p></div>
+        </article>
+        <article class="projecte-card reveal reveal-delay-2" data-category="aero">
+          <div class="projecte-img"><!-- img--><img src="../img/projects/proj-aero.svg" alt="Aerotèrmia habitatge" loading="lazy"/></div>
+          <div class="projecte-body"><span class="projecte-tag">Aerotèrmia</span><h3>Sistema aerotèrmic habitatge unifamiliar</h3><p>Calefacció + refrigeració + ACS. Estalvi del 70% en energia.</p></div>
+        </article>
+        <article class="projecte-card reveal" data-category="electric">
+          <div class="projecte-img"><!-- TODO ES: Foto real del cuadro eléctrico local --><img src="../img/projects/proj-electric.svg" alt="Quadre elèctric local" loading="lazy"/></div>
+          <div class="projecte-body"><span class="projecte-tag">Electricitat</span><h3>Renovació quadre elèctric local comercial</h3><p>Actualització instal·lació elèctrica i quadre principal a Terrassa.</p></div>
+        </article>
+        <article class="projecte-card reveal reveal-delay-1" data-category="gas">
+          <div class="projecte-img"><!-- TODO ES: Foto real de la red de gas edificio --><img src="../img/projects/proj-gas.svg" alt="Xarxa gas natural" loading="lazy"/></div>
+          <div class="projecte-body"><span class="projecte-tag">Gas</span><h3>Conversió xarxa de gas natural</h3><p>Adaptació i certificació per a edifici plurifamiliar de 48 habitatges.</p></div>
+        </article>
+        <article class="projecte-card reveal reveal-delay-2" data-category="calefaccio">
+          <div class="projecte-img"><!-- TODO ES: Foto real de suelo radiante en instalación --><img src="../img/projects/proj-radiant.svg" alt="Sòl radiant oficines" loading="lazy"/></div>
+          <div class="projecte-body"><span class="projecte-tag">Calefacció</span><h3>Sòl radiant edifici d'oficines</h3><p>Instal·lació sòl radiant baixa temperatura a Sant Cugat.</p></div>
+        </article>
+        <article class="projecte-card reveal" data-category="clima">
+          <div class="projecte-img"><!-- TODO ES: Foto real sistema VRV instalado --><img src="../img/projects/proj-vrv.svg" alt="Sistema VRV oficines" loading="lazy"/></div>
+          <div class="projecte-body"><span class="projecte-tag">Climatització</span><h3>Sistema VRV per a oficines</h3><p>Volum de refrigerant variable en edifici d'oficines de 5 plantes.</p></div>
+        </article>
+        <article class="projecte-card reveal reveal-delay-1" data-category="aero">
+          <div class="projecte-img"><!-- TODO ES: Foto real aerotermia urbanización adosados --><img src="../img/projects/proj-aero2.svg" alt="Aerotèrmia urbanització" loading="lazy"/></div>
+          <div class="projecte-body"><span class="projecte-tag">Aerotèrmia</span><h3>Aerotèrmia urbanització residencial</h3><p>12 habitatges adossats. Subvenció IDAE gestionada per Lindjan.</p></div>
+        </article>
+        <article class="projecte-card reveal reveal-delay-2" data-category="electric">
+          <div class="projecte-img"><!-- TODO ES: Foto real de la instalación fotovoltaica industrial --><img src="../img/projects/proj-pv.svg" alt="Autoconsum fotovoltaic" loading="lazy"/></div>
+          <div class="projecte-body"><span class="projecte-tag">Electricitat</span><h3>Autoconsum fotovoltaic industrial</h3><p>50 kWp per a autoconsum. ROI estimat en 6 anys.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="banner-cta"><div class="container"><h2 class="reveal">El teu projecte pot ser el <span class="highlight">proper cas d'èxit</span></h2><div style="margin-top:2rem;"><a href="contacte.html" class="btn btn-outline btn-arrow">Explica'ns el teu repte</a></div></div></div>
+
+  <footer class="footer"><div class="footer-inner"><span class="footer-copy">© Lindjan S.L. 2026</span><nav class="footer-links"><a href="#">Termes i Condicions</a><a href="#">Política de Privacitat</a><a href="#">Cookies</a></nav></div></footer>
+  <script src="../js/utils/constants.js"></script><script src="../js/utils/helpers.js"></script><script src="../js/menu.js"></script><script src="../js/animations.js"></script><script src="../js/slider.js"></script><script src="../js/form.js"></script><script src="../js/main.js"></script>
+</body>
+</html>

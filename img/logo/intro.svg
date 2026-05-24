@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.33 248.92">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Poppins-Bold, Poppins;
+        font-size: 47.31px;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ec651e;
+      }
+
+      .cls-4 {
+        fill: #126883;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2 {
+        font-family: FuturaPT-Light, 'Futura PT';
+        font-size: 23.65px;
+        font-weight: 300;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <g>
+        <path class="cls-4" d="M151.31,107.65c-.93,45.56-51.76,54.86-72.13,29.92-34.81-42.61,56.19-66.35,50.67-111.36,17.58,29.69-9.86,47.74-19.39,71.02-14.2,34.68,12.65,35.83,40.85,10.42Z"/>
+        <path class="cls-3" d="M95.74,74.97c-12.88,11.53-31.91,31.31-27.06,44.69C40.55,64.33,127.28,52.98,111.48,0c11.39,20.2,21.89,23.35,10.39,44.73-3.77,7-14.38,19.72-26.13,30.24Z"/>
+      </g>
+      <text class="cls-1" transform="translate(5.03 211.77)"><tspan x="0" y="0">LINDJAN</tspan></text>
+      <text class="cls-2" transform="translate(64.83 243.01)"><tspan class="cls-5" x="0" y="0">F</tspan><tspan class="cls-6" x="8.61" y="0">ent camí</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contacta amb Lindjan per a pressupostos d'instal·lació energètica sense compromís."/>
+  <title>Contacte – Lindjan</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .contacte-page-bg { background: var(--c-navy); padding: 150px 2rem 80px; text-align:center; position:relative; overflow:hidden; }
+    .contacte-page-bg::before { content:''; position:absolute; inset:0; background:linear-gradient(135deg,var(--c-navy),var(--c-teal)); opacity:.7; }
+    .contacte-page-bg .container { position:relative; z-index:1; }
+    .contacte-page-bg h1 { color:var(--c-white); }
+    .contacte-page-bg p  { color:rgba(255,255,255,.65); max-width:520px; margin:1rem auto 0; font-size:1.1rem; }
+    .contacte-main { background:var(--c-navy); padding:80px 0; }
+    .cta-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-bottom:4rem; }
+    .cta-card { background:rgb(5 96 119 / 33%); border:1px solid rgba(255,255,255,.1); border-radius:var(--radius-lg); padding:2rem; text-align:center; transition:var(--trans); }
+    .cta-card:hover { background:rgba(255,255,255,.09); border-color:var(--c-orange); }
+    .cta-card-icon { width:56px; height:56px; background:var(--c-orange); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem; font-size:1.3rem; color:var(--c-white); }
+    .cta-card h3 { color:var(--c-white); margin-bottom:8px; font-size:1rem; }
+    .cta-card p  { font-size:.85rem; margin-bottom:1rem; }
+    .cta-card a  { color:var(--c-orange); font-weight:600; font-size:.9rem; }
+    .contacte-form-big { background:rgb(5 96 119 / 33%); border:1px solid rgba(255,255,255,.08); border-radius:20px; padding:3rem; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; }
+    .servei-select { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:6px; }
+    .servei-check { padding:10px 14px; background:rgba(255,255,255,.05); border:1.5px solid rgba(255,255,255,.1); border-radius:var(--radius); color:rgba(255,255,255,.65); font-size:.82rem; cursor:pointer; text-align:center; transition:var(--trans); user-select:none; }
+    .servei-check:hover { border-color:var(--c-orange); color:var(--c-white); }
+    .servei-check.selected { border-color:var(--c-orange); background:rgba(247,148,29,.15); color:var(--c-white); }
+    .privacy-check { display:flex; align-items:flex-start; gap:10px; }
+    .privacy-check input { margin-top:3px; accent-color:var(--c-orange); }
+    .privacy-check label { color:rgba(255,255,255,.6); font-size:.82rem; }
+    .privacy-check a { color:var(--c-orange); }
+  </style>
+</head>
+<body>
+  <nav class="navbar" role="navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo-placeholder">
+        <img src="/img/logo/menu.webp" alt="Lindjan" />
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="serveis.html" class="nav-link has-dropdown">Serveis <span class="caret"></span></a><div class="dropdown"><a href="serveis.html#productes">Productes</a><a href="serveis.html#installacions">Instal·lacions</a><a href="serveis.html#certificats">Certificats</a></div></li>
+        <li class="nav-item"><a href="projectes.html" class="nav-link">Projectes</a></li>
+        <li class="nav-item"><a href="consells.html" class="nav-link">Consells</a></li>
+        <li class="nav-item"><a href="contacte.html" class="nav-link active">Contacte</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:12px;"><div class="nav-social"><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="mailto:lindjan@gmail.com" aria-label="Correu"><i class="fas fa-envelope"></i></a><a href="tel:+34649576052" aria-label="Telèfon"><i class="fas fa-phone"></i></a></div><button class="nav-lang">Ca</button><button class="nav-toggle" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+
+  <header class="contacte-page-bg">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../index.html">Inici</a><span>›</span><span>Contacte</span></nav>
+      <h1>Parla amb nosaltres</h1>
+      <p>Responem en menys de 24 hores i preparem el teu pressupost sense compromís</p>
+    </div>
+  </header>
+
+  <section class="contacte-main">
+    <div class="container">
+      <div class="cta-cards">
+        <div class="cta-card reveal"><div class="cta-card-icon"><i class="fas fa-phone"></i></div><h3>Truca'ns</h3><p>Atenció directa, de dilluns a divendres de 8:00 a 18:00h</p><a href="tel:+34649576052">+34 649 576 052</a></div>
+        <div class="cta-card reveal reveal-delay-1"><div class="cta-card-icon"><i class="fas fa-envelope"></i></div><h3>Escriu-nos</h3><p>Resposta en menys de 24 hores laborables</p><a href="mailto:lindjan@gmail.com">lindjan@gmail.com</a></div>
+        <div class="cta-card reveal reveal-delay-2"><div class="cta-card-icon"><i class="fab fa-instagram"></i></div><h3>Segueix-nos</h3><p>Darrers projectes i novetats del sector energètic</p><a href="#">@lindjan</a></div>
+      </div>
+
+      <div class="reveal">
+        <form class="contacte-form-big contacte-form" novalidate>
+          <div style="margin-bottom:2rem;">
+            <h2 style="color:var(--c-white);margin-bottom:.5rem;">Sol·licita un pressupost</h2>
+            <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Omple el formulari i et contactem el més aviat possible</p>
+          </div>
+          <div class="form-row" style="margin-bottom:1.25rem;">
+            <div class="form-group"><label for="nom">Nom i cognoms <span style="color:var(--c-orange)">*</span></label><input type="text" id="nom" name="nom" class="form-control" placeholder="Joan Garcia Puig" required/></div>
+            <div class="form-group"><label for="telefon">Telèfon <span style="color:var(--c-orange)">*</span></label><input type="tel" id="telefon" name="telefon" class="form-control" placeholder="+34 600 000 000" required/></div>
+          </div>
+          <div class="form-row" style="margin-bottom:1.25rem;">
+            <div class="form-group"><label for="email">Correu electrònic <span style="color:var(--c-orange)">*</span></label><input type="email" id="email" name="email" class="form-control" placeholder="joan@exemple.com" required/></div>
+            <div class="form-group"><label for="empresa">Empresa (opcional)</label><input type="text" id="empresa" name="empresa" class="form-control" placeholder="Nom de l'empresa"/></div>
+          </div>
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label>Tipus de servei</label>
+            <div class="servei-select">
+              <div class="servei-check" data-value="calefaccio">Calefacció</div>
+              <div class="servei-check" data-value="clima">Climatització</div>
+              <div class="servei-check" data-value="gas">Gas</div>
+              <div class="servei-check" data-value="electric">Electricitat</div>
+              <div class="servei-check" data-value="aero">Aerotèrmia</div>
+              <div class="servei-check" data-value="cert">Certificats</div>
+            </div>
+            <input type="hidden" name="serveis" id="serveiHidden"/>
+          </div>
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label for="missatge">Descriu el teu projecte <span style="color:var(--c-orange)">*</span></label>
+            <textarea id="missatge" name="missatge" class="form-control" rows="5" placeholder="Tipus d'instal·lació, mida de l'espai, obra nova o reforma..." required></textarea>
+          </div>
+          <div class="form-group" style="margin-bottom:2rem;">
+            <div class="privacy-check"><input type="checkbox" id="privacy" name="privacy" required/><label for="privacy">He llegit i accepto la <a href="#">Política de Privacitat</a> i autoritzo el tractament de les meves dades.</label></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-arrow">Enviar sol·licitud</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer-inner"><span class="footer-copy">© Lindjan S.L. 2026</span><nav class="footer-links"><a href="#">Termes i Condicions</a><a href="#">Política de Privacitat</a><a href="#">Cookies</a></nav></div></footer>
+  <script src="../js/utils/constants.js"></script><script src="../js/utils/helpers.js"></script><script src="../js/menu.js"></script><script src="../js/animations.js"></script><script src="../js/slider.js"></script><script src="../js/form.js"></script><script src="../js/main.js"></script>
+</body>
+</html>

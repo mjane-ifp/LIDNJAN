@@ -1,0 +1,35 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bgPlaq" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0D2735"/>
+    <stop offset="100%" stop-color="#1A4A5C"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="400" fill="url(#bgPlaq)"/>
+<circle cx="300" cy="190" r="88" fill="#F7941D" opacity="0.06"/>
+<circle cx="300" cy="190" r="62" fill="white" opacity="0.04"/>
+
+  <circle cx="300" cy="180" r="34" fill="#F7941D"/>
+  <line x1="344" y1="180" x2="358" y2="180" stroke="#F7941D" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="331" y1="211" x2="341" y2="221" stroke="#F7941D" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="300" y1="224" x2="300" y2="238" stroke="#F7941D" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="269" y1="211" x2="259" y2="221" stroke="#F7941D" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="256" y1="180" x2="242" y2="180" stroke="#F7941D" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="269" y1="149" x2="259" y2="139" stroke="#F7941D" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="300" y1="136" x2="300" y2="122" stroke="#F7941D" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="331" y1="149" x2="341" y2="139" stroke="#F7941D" stroke-width="3.5" stroke-linecap="round"/>
+  <g opacity="0.18" fill="none" stroke="#F7941D" stroke-width="1">
+    <rect x="195" y="245" width="70" height="45" rx="3"/>
+    <rect x="272" y="245" width="70" height="45" rx="3"/>
+    <rect x="349" y="245" width="70" height="45" rx="3"/>
+    <line x1="195" y1="268" x2="265" y2="268"/>
+    <line x1="272" y1="268" x2="342" y2="268"/>
+    <line x1="349" y1="268" x2="419" y2="268"/>
+  </g>
+<text x="300" y="362" text-anchor="middle"
+  font-family="system-ui,-apple-system,sans-serif"
+  font-size="15" font-weight="700" fill="white" opacity="0.45"
+  letter-spacing="4">PLAQUES SOLARS</text>
+<line x1="272" y1="378" x2="328" y2="378"
+  stroke="#F7941D" stroke-width="1.5" opacity="0.45"/>
+</svg>
