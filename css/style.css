@@ -107,7 +107,7 @@
 .serveis-item-text h3 { color: var(--c-white); font-size: 1rem; margin-bottom: 4px; }
 .serveis-item-text p  { color: rgba(255,255,255,0.8); font-size: 0.85rem; line-height: 1.5; }
 .serveis-right { position: relative; overflow: hidden; min-height: 400px; }
-.serveis-right img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.65) saturate(0.8); }
+.serveis-right img { width: 100%; height: 100%; object-fit: cover; }
 
 /* ============================================
    BANNER CTA
