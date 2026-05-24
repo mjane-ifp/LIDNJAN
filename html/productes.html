@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/serveis.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="icon" type="image/png" href="../img/logo/icono.png">
+  <link rel="stylesheet" href="../css/modal.css"/>
 </head>
 <body>
 
@@ -23,12 +24,7 @@
       </a>
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="serveis.html" class="nav-link has-dropdown active">Serveis <span class="caret"></span></a>
-          <div class="dropdown">
-            <a href="#productes">Productes</a>
-            <a href="#installacions">Instal·lacions</a>
-            <a href="#certificats">Certificats</a>
-          </div>
+          <button class="nav-link services-modal-btn" aria-label="Obrir menú de serveis">Serveis <span class="caret"></span></button>
         </li>
         <li class="nav-item"><a href="projectes.html" class="nav-link">Projectes</a></li>
         <li class="nav-item"><a href="consells.html" class="nav-link">Consells</a></li>
@@ -307,5 +303,58 @@
   <script src="../js/form.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/serveis.js"></script>
+</body>
+  <script src="../js/modal.js"></script>
+
+  <!-- MODAL DE SERVICIOS -->
+  <div id="servicesModal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2><i class="fas fa-wrench"></i> Tots els nostres serveis</h2>
+        <button class="modal-close" aria-label="Tancar modal"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-box"></i></div>
+            <h3 class="service-name">Productes</h3>
+            <p class="service-description">Equips d'alta eficiència de les principals marques</p>
+            <a href="productes.html" class="service-link">Conèixer més →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-hammer"></i></div>
+            <h3 class="service-name">Instal·lacions</h3>
+            <p class="service-description">Muntatge professional amb garantia total</p>
+            <a href="installacions.html" class="service-link">Conèixer més →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-certificate"></i></div>
+            <h3 class="service-name">Certificats</h3>
+            <p class="service-description">Gestionem totes les legalitzacions oficials</p>
+            <a href="serveis.html#certificats" class="service-link">Conèixer més →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+            <h3 class="service-name">Projectes</h3>
+            <p class="service-description">Casos reals d'instal·lació i eficiència</p>
+            <a href="projectes.html" class="service-link">Conèixer més →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3 class="service-name">Consells</h3>
+            <p class="service-description">Guies pràctiques per estalviar energia</p>
+            <a href="consells.html" class="service-link">Conèixer més →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-phone-alt"></i></div>
+            <h3 class="service-name">Contacte</h3>
+            <p class="service-description">Parla amb els nostres tècnics</p>
+            <a href="contacte.html" class="service-link">Conèixer més →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </body>
 </html>
